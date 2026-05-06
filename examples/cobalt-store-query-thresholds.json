@@ -1,0 +1,17 @@
+{
+  "repo": "cobalt-store-query-line",
+  "thresholds": {
+    "signal": 2,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 4,
+    "ship": 190,
+    "watch": 117
+  },
+  "terms": [
+    "index fit",
+    "join width",
+    "constraint risk",
+    "plan drift"
+  ]
+}
