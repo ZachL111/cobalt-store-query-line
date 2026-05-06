@@ -1,0 +1,73 @@
+{
+  "repo": "cobalt-store-query-line",
+  "language": "Swift",
+  "category": "Databases",
+  "goal": "Develop a Swift command-oriented project for query scenarios with capacity fixtures, allocation and spill reports, and offline replay mode.",
+  "review_model": {
+    "terms": [
+      "index fit",
+      "join width",
+      "constraint risk",
+      "plan drift"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "index fit",
+      "signal": 74,
+      "slack": 46,
+      "drag": 9,
+      "confidence": 73,
+      "score": 240,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "join width",
+      "signal": 67,
+      "slack": 54,
+      "drag": 15,
+      "confidence": 52,
+      "score": 195,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "constraint risk",
+      "signal": 74,
+      "slack": 39,
+      "drag": 22,
+      "confidence": 84,
+      "score": 205,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "plan drift",
+      "signal": 88,
+      "slack": 54,
+      "drag": 17,
+      "confidence": 67,
+      "score": 246,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "index fit",
+      "signal": 72,
+      "slack": 35,
+      "drag": 10,
+      "confidence": 63,
+      "score": 212,
+      "lane": "ship"
+    }
+  ]
+}
